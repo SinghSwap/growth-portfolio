@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Mail, Phone, ArrowUpRight } from "lucide-react";
 import { site } from "@/lib/data";
 
@@ -22,9 +22,9 @@ export function Contact() {
   return (
     <section id="contact" className="relative mx-auto w-full max-w-4xl px-6 py-24 md:py-32">
       <div className="relative overflow-hidden rounded-3xl border border-[var(--border)] bg-surface p-10 text-center md:p-16">
-        <div className="pointer-events-none absolute -top-24 left-1/2 size-72 -translate-x-1/2 rounded-full bg-accent/25 blur-[100px]" />
+        <div className="pointer-events-none absolute -top-24 left-1/2 size-72 -translate-x-1/2 rounded-full bg-accent/25 blur-[70px]" />
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
@@ -53,7 +53,7 @@ export function Contact() {
               </a>
             ))}
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { impact } from "@/lib/data";
 import { Counter } from "./ui/counter";
 
@@ -9,7 +9,7 @@ export function Impact() {
     <section id="impact" className="relative mx-auto w-full max-w-6xl px-6 py-20 md:py-28">
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
         {impact.map((stat, i) => (
-          <motion.div
+          <m.div
             key={stat.label}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ export function Impact() {
             </div>
             <p className="mt-3 text-sm font-medium text-foreground">{stat.label}</p>
             <p className="mt-1 text-xs text-muted-2">{stat.sub}</p>
-          </motion.div>
+          </m.div>
         ))}
       </div>
     </section>

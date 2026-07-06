@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
+import { m, type Variants } from "framer-motion";
 import { ArrowDown, Download, MapPin } from "lucide-react";
 import { site } from "@/lib/data";
 import { MagneticButton } from "./ui/magnetic-button";
@@ -25,13 +25,13 @@ export function Hero() {
       <div className="aurora" />
       <div className="absolute inset-0 grid-overlay" />
 
-      <motion.div
+      <m.div
         variants={container}
         initial="hidden"
         animate="show"
         className="relative z-10 flex max-w-3xl flex-col items-center"
       >
-        <motion.div variants={item} className="mb-7">
+        <m.div variants={item} className="mb-7">
           <div className="relative mx-auto size-28 sm:size-32">
             <div className="absolute -inset-1 rounded-full bg-[conic-gradient(from_180deg,var(--accent-3),var(--accent),var(--accent-2),var(--accent-3))] opacity-70 blur-[6px]" />
             <div className="absolute -inset-px rounded-full bg-[linear-gradient(135deg,var(--accent-3),var(--accent-2))]" />
@@ -49,9 +49,9 @@ export function Hero() {
               }}
             />
           </div>
-        </motion.div>
+        </m.div>
 
-        <motion.div
+        <m.div
           variants={item}
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[rgba(255,255,255,0.03)] px-4 py-1.5 text-xs text-muted"
         >
@@ -63,30 +63,30 @@ export function Hero() {
           <span className="mx-1 text-muted-2">·</span>
           <MapPin className="size-3" />
           {site.location}
-        </motion.div>
+        </m.div>
 
-        <motion.h1
+        <m.h1
           variants={item}
           className="text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl"
         >
           {site.name}
-        </motion.h1>
+        </m.h1>
 
-        <motion.p
+        <m.p
           variants={item}
           className="mt-4 text-lg font-medium sm:text-xl gradient-text"
         >
           {site.role}
-        </motion.p>
+        </m.p>
 
-        <motion.p
+        <m.p
           variants={item}
           className="mt-6 max-w-xl text-balance text-base text-muted sm:text-lg"
         >
           {site.tagline}
-        </motion.p>
+        </m.p>
 
-        <motion.div
+        <m.div
           variants={item}
           className="mt-9 flex flex-col items-center gap-3 sm:flex-row"
         >
@@ -97,10 +97,10 @@ export function Hero() {
             <Download className="size-4" />
             Download Resume
           </MagneticButton>
-        </motion.div>
-      </motion.div>
+        </m.div>
+      </m.div>
 
-      <motion.a
+      <m.a
         href="#impact"
         aria-label="Scroll to impact"
         initial={{ opacity: 0 }}
@@ -109,7 +109,7 @@ export function Hero() {
         className="absolute bottom-8 z-10 text-muted-2 hover:text-foreground transition-colors"
       >
         <ArrowDown className="size-5 animate-bounce" />
-      </motion.a>
+      </m.a>
     </section>
   );
 }

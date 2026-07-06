@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import { Briefcase, Check } from "lucide-react";
 import { experience } from "@/lib/data";
 import { SectionHeading } from "./ui/section-heading";
@@ -55,13 +55,11 @@ export function Experience() {
                     isActive ? "text-white" : "text-muted hover:text-foreground"
                   }`}
                 >
-                  {isActive && (
-                    <motion.span
-                      layoutId="exp-tab"
-                      className="absolute inset-0 rounded-full bg-[linear-gradient(100deg,var(--accent-2),var(--accent))]"
-                      transition={{ type: "spring", stiffness: 350, damping: 30 }}
-                    />
-                  )}
+                  <span
+                    className={`absolute inset-0 rounded-full bg-[linear-gradient(100deg,var(--accent-2),var(--accent))] transition-opacity duration-300 ${
+                      isActive ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
                   <span className="relative z-10">{tab.label}</span>
                 </button>
               );
@@ -71,7 +69,7 @@ export function Experience() {
           {/* Content */}
           <div className="p-6 md:p-8">
             <AnimatePresence mode="wait">
-              <motion.ul
+              <m.ul
                 key={current.id}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -85,7 +83,7 @@ export function Experience() {
                     <span>{b}</span>
                   </li>
                 ))}
-              </motion.ul>
+              </m.ul>
             </AnimatePresence>
           </div>
         </div>

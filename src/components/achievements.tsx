@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { achievements } from "@/lib/data";
 import { SectionHeading } from "./ui/section-heading";
@@ -16,7 +16,7 @@ export function Achievements() {
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {achievements.map((a, i) => (
-          <motion.article
+          <m.article
             key={a.title}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export function Achievements() {
             </span>
             <h3 className="mt-4 text-base font-semibold text-foreground">{a.title}</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">{a.detail}</p>
-          </motion.article>
+          </m.article>
         ))}
       </div>
     </section>

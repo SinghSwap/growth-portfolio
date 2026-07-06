@@ -83,7 +83,8 @@ body {
   width: 55vw;
   height: 55vw;
   border-radius: 50%;
-  filter: blur(120px);
+  /* Lighter blur radius — far cheaper to rasterize on mobile GPUs */
+  filter: blur(70px);
   opacity: 0.5;
   will-change: transform;
 }
@@ -99,13 +100,14 @@ body {
   right: -15%;
   animation: drift2 22s ease-in-out infinite alternate;
 }
+/* Translate-only keyframes stay on the compositor (no blur re-rasterization) */
 @keyframes drift1 {
-  from { transform: translate(0, 0) scale(1); }
-  to { transform: translate(12vw, 8vh) scale(1.15); }
+  from { transform: translate(0, 0); }
+  to { transform: translate(12vw, 8vh); }
 }
 @keyframes drift2 {
-  from { transform: translate(0, 0) scale(1.1); }
-  to { transform: translate(-10vw, 6vh) scale(0.9); }
+  from { transform: translate(0, 0); }
+  to { transform: translate(-10vw, 6vh); }
 }
 
 /* Subtle grid overlay */

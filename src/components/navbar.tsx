@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { nav, site } from "@/lib/data";
 
@@ -16,7 +16,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <motion.header
+    <m.header
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -25,7 +25,7 @@ export function Navbar() {
       <nav
         className={`flex items-center gap-1 rounded-full px-2 py-2 transition-all duration-300 ${
           scrolled
-            ? "bg-[rgba(14,14,20,0.72)] backdrop-blur-xl border border-[var(--border)] shadow-[0_10px_40px_-20px_#000]"
+            ? "bg-[rgba(14,14,20,0.82)] backdrop-blur-md border border-[var(--border)] shadow-[0_10px_40px_-20px_#000]"
             : "bg-transparent border border-transparent"
         }`}
       >
@@ -55,6 +55,6 @@ export function Navbar() {
           <ArrowUpRight className="size-3.5" />
         </a>
       </nav>
-    </motion.header>
+    </m.header>
   );
 }

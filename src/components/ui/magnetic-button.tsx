@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { m, useMotionValue, useSpring } from "framer-motion";
 import type { ReactNode, MouseEvent } from "react";
 import { useRef } from "react";
 
@@ -47,7 +47,7 @@ export function MagneticButton({
       : "text-foreground bg-surface border border-[var(--border-strong)] hover:bg-surface-2";
 
   return (
-    <motion.a
+    <m.a
       ref={ref}
       href={href}
       download={download}
@@ -59,6 +59,6 @@ export function MagneticButton({
       className={`${base} ${styles} ${className}`}
     >
       {children}
-    </motion.a>
+    </m.a>
   );
 }
