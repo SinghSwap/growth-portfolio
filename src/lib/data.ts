@@ -6,6 +6,7 @@ export const site = {
   name: "Sugandha Singh",
   role: "Growth Marketing Specialist",
   location: "Delhi NCR",
+  url: "https://sugandhaportfolio.vercel.app",
   photo: "/profile.jpg",
   // One-line positioning, rewritten from the CV summary (meaning unchanged).
   tagline:
