@@ -43,6 +43,10 @@ export function Hero() {
             <img
               src={site.photo}
               alt={`${site.name} — ${site.role}`}
+              width={128}
+              height={128}
+              fetchPriority="high"
+              decoding="async"
               className="relative size-full rounded-full border-2 border-[var(--background)] object-cover"
               onError={(e) => {
                 e.currentTarget.style.display = "none";
