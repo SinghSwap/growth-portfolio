@@ -13,8 +13,7 @@ export const site = {
     "Full-funnel growth marketer for B2B SaaS — turning paid, lifecycle, and organic into measurable pipeline and revenue.",
   email: "s.singh.090396@gmail.com",
   phone: "9873419728",
-  // CV links "LinkedIn" but the PDF does not expose the URL. Replace before going live.
-  linkedin: "https://www.linkedin.com/in/", // TODO: confirm real LinkedIn URL
+  linkedin: "https://www.linkedin.com/in/sugandha-singh-bb01a5220/",
   resume: "/resume.pdf",
 };
 
