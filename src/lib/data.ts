@@ -8,9 +8,9 @@ export const site = {
   location: "Delhi NCR",
   url: "https://sugandhaportfolio.vercel.app",
   photo: "/profile.jpg",
-  // One-line positioning, rewritten from the CV summary (meaning unchanged).
+  // Hero positioning line.
   tagline:
-    "Full-funnel growth marketer for B2B SaaS — turning paid, lifecycle, and organic into measurable pipeline and revenue.",
+    "Building growth engines for B2B SaaS. Turning marketing into predictable pipeline through paid acquisition, SEO, content, and lifecycle marketing.",
   email: "s.singh.090396@gmail.com",
   phone: "9873419728",
   linkedin: "https://www.linkedin.com/in/sugandha-singh-bb01a5220/",
@@ -34,7 +34,7 @@ type Stat = {
   compact?: boolean;
 };
 export const impact: Stat[] = [
-  { value: 7, suffix: "X", label: "Peak ROAS", sub: "on paid media campaigns" },
+  { value: 4, suffix: "X", label: "Peak ROAS", sub: "on paid media campaigns" },
   { prefix: "₹", value: 2, label: "Lowest CPI", sub: "B2C real-money gaming app", compact: false },
   { prefix: "₹", value: 2, suffix: "L", label: "Monthly ad budget", sub: "managed across products", compact: false },
   { value: 1500, suffix: "+", label: "LinkedIn followers", sub: "grown from 0, organically" },
@@ -56,7 +56,7 @@ export const experience = {
       bullets: [
         "Owned end-to-end paid campaigns on Google, Meta & LinkedIn — targeting, creative, budgets, and reporting.",
         "Managed up to ₹2L/month in ad spend across B2B SaaS and B2C, optimizing CTR, CPC, CPL, CPI, ROAS & conversion.",
-        "Drove up to 7X ROAS through data-led audience targeting and creative A/B testing.",
+        "Drove up to 4X ROAS through data-led audience targeting and creative A/B testing.",
         "Hit CPI as low as ₹2 on a B2C real-money gaming app via tight segmentation and optimization.",
       ],
     },
@@ -104,9 +104,9 @@ export const experience = {
 // Featured achievements — cards. Each maps to a real CV line.
 export const achievements = [
   {
-    metric: "7X ROAS",
+    metric: "4X ROAS",
     title: "Scaled paid media profitably",
-    detail: "Up to 7X return on ad spend across Google, Meta & LinkedIn through data-led targeting and creative testing.",
+    detail: "Up to 4X return on ad spend across Google, Meta & LinkedIn through data-led targeting and creative testing.",
   },
   {
     metric: "₹2 CPI",
@@ -132,6 +132,75 @@ export const achievements = [
     metric: "Notion Hub",
     title: "Owned the sales enablement stack",
     detail: "Centralized decks and collateral — plus SEO pages that became top inbound lead sources.",
+  },
+];
+
+// Selected Work — proof of work, from the work-samples PDF. Links stay clickable.
+export const selectedWork = [
+  {
+    id: "success-stories",
+    category: "Customer Success Stories & Sales Enablement",
+    overview:
+      "Owned customer success stories end to end — sourcing customers, running interviews, writing enterprise-ready narratives, and publishing.",
+    contributions: [
+      "Sourced customers and ran interviews to surface measurable outcomes.",
+      "Wrote enterprise-ready narratives and managed stakeholder + client approvals.",
+      "Partnered with sales & marketing to put the assets to work.",
+    ],
+    impact: [
+      "Stories became some of the most-visited pages on the site.",
+      "Lifted engagement and form submissions with credible social proof.",
+      "Armed sales for enterprise conversations — supported wins like Titan & Asaya.",
+    ],
+    links: [
+      { label: "Lowcostglasses", href: "https://www.glamar.io/customer-stories/lowcostglasses" },
+      { label: "Foxtale", href: "https://www.glamar.io/customer-stories/foxtale" },
+      { label: "White Cut Diamonds", href: "https://www.glamar.io/customer-stories/whitecutdiamonds" },
+    ],
+  },
+  {
+    id: "organic-social",
+    category: "Organic Social & Thought Leadership",
+    overview:
+      "Built and ran a multi-format organic strategy across LinkedIn & YouTube to drive awareness, educate prospects, and generate inbound.",
+    contributions: [
+      "Produced product demos, educational content, and customer stories.",
+      "Ran product-launch campaigns and industry-trend posts.",
+      "Built founder thought leadership.",
+    ],
+    impact: [
+      "Consistent organic engagement and stronger visibility with retail & beauty brands.",
+      "One LinkedIn post sparked inbound from Pilgrim — later a customer.",
+    ],
+    links: [
+      { label: "LinkedIn — CGI visual storytelling", href: "https://www.linkedin.com/posts/cgi-visualstorytelling-motiondesign-ugcPost-7349362140173991936-KHig/" },
+      { label: "LinkedIn — Retail innovation (phygital)", href: "https://www.linkedin.com/posts/dharmendra-mehta_glamar-retailinnovation-phygital-ugcPost-7356902655685799936-lK9o/" },
+      { label: "LinkedIn — GlamAR product post", href: "https://www.linkedin.com/posts/your-mirror-shows-you-your-face-glamar-shows-ugcPost-7429450543015587841-ykEY/" },
+      { label: "LinkedIn — AR advertising / WebAR", href: "https://www.linkedin.com/posts/augmentedreality-aradvertising-webar-ugcPost-7351516155993305090-4reu/" },
+      { label: "YouTube — GlamAR channel", href: "https://www.youtube.com/@Glamario/playlists" },
+      { label: "YouTube — Short", href: "https://youtube.com/shorts/gQ7m-JF7-cI" },
+    ],
+  },
+  {
+    id: "website-seo",
+    category: "Website Strategy, Messaging & SEO",
+    overview:
+      "Owned GlamAR's website content — turning complex AI into clear, outcome-driven messaging built for search visibility and lead gen.",
+    contributions: [
+      "Owned messaging across solution, industry, and product pages.",
+      "Crafted persona- and industry-specific value props; wrote conversion-focused B2B copy.",
+      "Ran on-page SEO — keyword research, meta, headers, internal linking, alt text.",
+      "Partnered with design & dev from ideation to launch.",
+    ],
+    impact: [
+      "Search-optimized pages built to convert enterprise buyers.",
+      "Clear value props that translate complex AI into business outcomes.",
+    ],
+    links: [
+      { label: "Industry — Skincare", href: "https://www.glamar.io/industry/skincare" },
+      { label: "Industry — Furniture", href: "https://www.glamar.io/industry/furniture" },
+      { label: "Solution — AI Facial Skin Analysis", href: "https://www.glamar.io/solutions/ai-facial-skin-analysis" },
+    ],
   },
 ];
 
