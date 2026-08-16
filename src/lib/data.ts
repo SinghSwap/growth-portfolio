@@ -11,7 +11,7 @@ export const site = {
   // Hero positioning line.
   tagline:
     "Building growth engines for B2B SaaS. Turning marketing into predictable pipeline through paid acquisition, SEO, content, and lifecycle marketing.",
-  email: "s.singh.090396@gmail.com",
+  email: "Jinnysingh0@gmail.com",
   phone: "9873419728",
   linkedin: "https://www.linkedin.com/in/sugandha-singh-bb01a5220/",
   resume: "/resume.pdf",
@@ -45,7 +45,7 @@ export const impact: Stat[] = [
 export const experience = {
   company: "Fynd",
   parent: "by Reliance",
-  period: "2022 — June 2026",
+  period: "2022 — Present",
   role: "Growth Marketing Specialist",
   // Product she grew is GlamAR (per CV).
   note: "Owning growth across paid, lifecycle, organic, and enablement.",
